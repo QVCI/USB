@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button botoncitol, botonciton, botoncitoi, bpaguito;
     EditText editadito;
@@ -63,6 +65,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     objetito.costoi();
                     alistito.agregar(objetito);
                     Toast.makeText(this, "agregado", Toast.LENGTH_SHORT).show();
+                }
+                if (cadenita.equals("pagar")){
+                    ArrayList<Clasesita> Aregresito = new ArrayList<>();
+                    Aregresito = alistito.regresar();
+                    for (int i = 0; i < Aregresito.size(); ++i){
+                        Toast.makeText(this, Aregresito.get(i).getTipo() + " "
+                                + Aregresito.get(i).getDuracion() + " "
+                                + Aregresito.get(i).getCosto() + " ", Toast.LENGTH_SHORT).show();
+                    }
                 }
 
     }
