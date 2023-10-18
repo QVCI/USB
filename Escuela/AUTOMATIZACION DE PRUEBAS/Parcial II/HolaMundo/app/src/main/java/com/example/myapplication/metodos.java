@@ -4,7 +4,7 @@ public class metodos
 {
     String unidades[]={"un","uno","dos","tres","cuatro","cinco","seis","siete","ocho","nueve"};
     String dices [] = {"", "once","doce", "trece", "catorce", "quince", "dieciseis", "decisiete", "dieciocho", "diecinueve"};
-    String decenas [] = {"veint", "treina", "cuarenta", "cincuenta",};
+    String decenas [] = {"veint", "treina", "cuarenta", "cincuenta", "sesenta", "setenta"};
     public String cerocifras()
     {
         return "";

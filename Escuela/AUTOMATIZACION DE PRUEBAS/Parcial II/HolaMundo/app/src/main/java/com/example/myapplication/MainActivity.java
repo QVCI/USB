@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
         setContentView(R.layout.activity_main);
         met = new metodos();
         textito = findViewById(R.id.textito);
+
         textito.setOnKeyListener(this);
         vistita = findViewById(R.id.vistita);
 
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnKeyListene
     @Override
     public boolean onKey(View v, int keyCode, KeyEvent event)
     {
-        if(event.getAction() == KeyEvent.ACTION_UP) //El metodo esta mal implementado, funciona per tienes que lograr
+        if(event.getAction() == KeyEvent.ACTION_DOWN) //El metodo esta mal implementado, funciona per tienes que lograr
             //deseleccionar el EditText
         {
             String textote = textito.getText().toString();
