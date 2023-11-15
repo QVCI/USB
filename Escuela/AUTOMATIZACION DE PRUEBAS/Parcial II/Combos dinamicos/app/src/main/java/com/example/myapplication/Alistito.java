@@ -20,6 +20,8 @@ public class Alistito
                 objetito.setClave(claves[i]);
                 objetito.setNombre(nombres[i]);
                 objetito.setCosto(costos[i]);
+                Calculador calculador = new Calculador();
+                calculador.setCosto(costos[i]);
 
                 adatittos.add(objetito);
             }
@@ -34,6 +36,8 @@ public class Alistito
                     objetito.setClave(claves[i]);
                     objetito.setNombre(nombres[i]);
                     objetito.setCosto(costos[i]);
+                    Calculador calculador = new Calculador();
+                    calculador.setCosto(costos[i]);
 
                     adatittos.add(objetito);
                 }
@@ -44,4 +48,5 @@ public class Alistito
     {
         return adatittos;
     }
+
 }

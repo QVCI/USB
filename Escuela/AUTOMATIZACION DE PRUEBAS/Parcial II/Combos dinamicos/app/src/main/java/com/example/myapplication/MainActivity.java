@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -15,11 +16,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
     Spinner sdeptos, sprods;
+    EditText cantidad;
     Button botoncito;
     ArrayAdapter<String> aadeptos;
     ArrayAdapter<Basurita> aaprods;
     ArrayList<Basurita> Arecibe = new ArrayList<>();
     int seleccionado = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        cantidad = findViewById(R.id.cantidad);
         botoncito = findViewById(R.id.boton);
         botoncito.setOnClickListener(this);
 
@@ -43,9 +47,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void onClick(View view)
-    {
+    public void onClick(View view) {
+        Calculador calculador = new Calculador();
+        Toast.makeText(this, calculador.getTotal(), Toast.LENGTH_SHORT).show();
+
+
+
         Toast.makeText(this, sdeptos.getSelectedItem().toString() + " " + sprods.getSelectedItem(), Toast.LENGTH_LONG).show();
+        int posi = sprods.getSelectedItemPosition();
+        Alistito alistito = new Alistito();
+        alistito.adatittos.get(posi);
+
+
     }
 
     @Override
@@ -59,6 +72,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                 aregreso.agregar(1);
                 Arecibe = aregreso.regresar();
+                Calculador calculador = new Calculador();
+
+                calculador.setCantidad(Integer.parseInt(cantidad.getText().toString()));
                 aaprods = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, Arecibe);
                 sprods.setAdapter(aaprods);
             }
@@ -68,8 +84,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 {
                     aregreso.agregar(2);
                     Arecibe = aregreso.regresar();
+                    Calculador calculador = new Calculador();
+
+                    calculador.setCantidad(Integer.parseInt(cantidad.getText().toString()));
                     aaprods = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, Arecibe);
                     sprods.setAdapter(aaprods);
+
                 }
                 else
                 {

@@ -3,6 +3,16 @@ package com.example.myapplication;
 public class Basurita
 {
     private int clave;
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    private int num;
     private int costo;
     private String nombre;
 
