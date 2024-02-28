@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Palindromo">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="regresar"
+        android:id="@+id/regresar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="ingrese texto aquí"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:id="@+id/input"/>
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/gris"
+            android:text="¡Es palindromo?"
+            android:id="@+id/valida"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

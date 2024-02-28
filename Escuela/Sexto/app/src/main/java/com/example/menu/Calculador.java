@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class Calculador extends AppCompatActivity {
     EditText num1;
     EditText num2;
     @Override
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculador);
         num1 = findViewById(R.id.num1);
         num2 = findViewById(R.id.num2);
     }
