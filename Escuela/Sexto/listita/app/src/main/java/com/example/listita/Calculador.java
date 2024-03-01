@@ -28,8 +28,8 @@ public class Calculador extends AppCompatActivity implements View.OnClickListene
         calculos  calculos = new  calculos();
         if (item.getItemId() == R.id.sumar)
         {
-            int numero1 = 0;
-            int numero2 = 0;
+            double numero1 = 0;
+            double numero2 = 0;
 
              numero1 = Integer.parseInt(num1.getText().toString());
              numero2 = Integer.parseInt(num2.getText().toString());

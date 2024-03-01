@@ -4,23 +4,23 @@
 <item android:id="@+id/palomita"
     android:title="palomita"
     android:icon="@drawable/palomita"
-    app:showAsAction="always"/>
+    app:showAsAction="never"/>
 
     <item android:id="@+id/sumar"
         android:title="suma"
         android:icon="@drawable/suma"
-        app:showAsAction="always"/>
+        app:showAsAction="never"/>
 
     <item android:id="@+id/restar"
         android:title="resta"
         android:icon="@drawable/resta"
-        app:showAsAction="always"/>
+        app:showAsAction="never"/>
     <item android:id="@+id/multiplicacion"
         android:title="multiplica"
         android:icon="@drawable/multiplica"
-        app:showAsAction="always"/>
+        app:showAsAction="never"/>
     <item android:id="@+id/dividir"
         android:title="divide"
         android:icon="@drawable/divide"
-        app:showAsAction="always"/>
+        app:showAsAction="never"/>
 </menu>

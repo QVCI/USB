@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Palindromo:"
+                android:text="Letras:"
                 android:textColor="@color/black"
                 android:layout_gravity="right"
                 android:padding="5dp"/>
@@ -38,12 +38,13 @@
             android:gravity="center"
             android:layout_gravity="center"
             android:layout_weight="1">
-            <Button
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:padding="5dp"
-                android:text="Ingresar a Activity"
+                android:src="@drawable/letras"
+                android:background="@color/white"
                 android:id="@+id/palindromo"/>
 
         </LinearLayout>
@@ -80,12 +81,13 @@
             android:gravity="center"
             android:layout_gravity="center"
             android:layout_weight="1">
-            <Button
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:padding="5dp"
-                android:text="Ingresar a Activity"
+                android:src="@drawable/calculadora"
+                android:background="@color/white"
                 android:id="@+id/calculadora"/>
 
         </LinearLayout>
@@ -123,12 +125,14 @@
             android:gravity="center"
             android:layout_gravity="center"
             android:layout_weight="1">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/inflado"
+                android:background="@color/white"
                 android:layout_gravity="left"
                 android:padding="5dp"
-                android:text="Ingresar a Activity"
+
                 android:id="@+id/inflado"/>
 
 
