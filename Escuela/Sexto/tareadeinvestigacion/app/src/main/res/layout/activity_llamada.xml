@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".llamada">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="regresar"
+        android:id="@+id/regresar"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="numero telefonico"
+        android:gravity="center"
+        android:id="@+id/telefono"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="phone"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_call_24"
+        android:id="@+id/llamar"
+
+        android:background="@color/white"/>
+
+
+
+
+</LinearLayout>
